@@ -1,4 +1,4 @@
-#include <rust_c_api.h>
+#include <wcrn.h>
 #include <stdio.h>
 
 int main() {
