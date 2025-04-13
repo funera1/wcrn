@@ -9,8 +9,8 @@ extern "C" {
 #endif
 
 // Function prototypes for the Rust library
-int rust_function(); // Example function
-size_t get_stack_size(uint32_t fidx, uint32_t offset);
+int wcrn_rust_function(); // Example function
+size_t wcrn_get_stack_size(uint32_t fidx, uint32_t offset);
 
 #ifdef __cplusplus
 }

@@ -4,14 +4,14 @@
 use crate::core::stack_tables;
 
 #[no_mangle]
-pub extern "C" fn rust_function() -> i32 {
+pub extern "C" fn wcrn_rust_function() -> i32 {
     // Example function that returns an integer
     stack_tables::hello();
     42
 }
 
 #[no_mangle]
-pub extern "C" fn get_stack_size(fidx: u32, offset: u32) -> usize {
+pub extern "C" fn wcrn_get_stack_size(fidx: u32, offset: u32) -> usize {
     stack_tables::get_stack_size("./", fidx, offset)
         .expect("failed to get stack size")
 }
