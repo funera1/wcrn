@@ -29,6 +29,6 @@ where
     P: AsRef<std::path::Path>,
 {
     let stack_tables = deserialize_stack_table(path)?;
-    let stack = stack_tables.get_stack(0 as usize, 0 as u32)?;
+    let stack = stack_tables.get_stack(fidx as usize, offset)?;
     Ok(stack.len())
 }

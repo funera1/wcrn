@@ -13,5 +13,5 @@ pub extern "C" fn wcrn_rust_function() -> i32 {
 #[no_mangle]
 pub extern "C" fn wcrn_get_stack_size(fidx: u32, offset: u32) -> usize {
     stack_tables::get_stack_size("./", fidx, offset)
-        .expect("failed to get stack size")
+        .expect("failed to get stack size ({fidx}, {offset})")
 }
